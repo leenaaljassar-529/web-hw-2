@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link
+      rel="stylesheet"
+      href="assests/bootstrap-4.5.0-dist/css/bootstrap.min.css"
+    />
+     <!-- font -->
+     <link href="https://fonts.googleapis.com/css2?family=Gorditas&family=Roboto&display=swap" rel="stylesheet">
+     
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+     .sidebar {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgb(97, 97, 97);
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+      }
+
+      .sidebar a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #a5a4a4;
+        display: block;
+        transition: 0.3s;
+      }
+
+      .sidebar a:hover {
+        color: #f1f1f1;
+      }
+
+      .sidebar .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+      }
+
+      .openbtn {
+        font-size: 20px;
+        cursor: pointer;
+        background-color: rgb(85, 85, 85);
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        margin:10px;
+      }
+
+      .openbtn:hover {
+        background-color: #444;
+      }
+
+      #main {
+        transition: margin-left 0.5s;
+        padding: 16px;
+      }
+
+      /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+      @media screen and (max-height: 450px) {
+        .sidebar {
+          padding-top: 15px;
+        }
+        .sidebar a {
+          font-size: 18px;
+        }
+      }
+      #main {
+  transition: margin-left .5s;
+  padding: 0px;
+}
+      </style>
+  </head>
+  <body id="main" style="background-color: #978f7288;">
+    <!-- the idea is to create an educational website about animals and add documentries +fun facts
+    home page: icons of animals=>click and you go to subpage of animal
+    sidebar:different on each page (like an outline with headline of important stuff) 
+    navbar: animal names 
+    animals:
+    1)Elephant
+    2)lion
+    3)giraffe
+    4)parrot
+    5)koala
+-->
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <!-- add home icon -->
+      <a class="navbar-brand" href="home.html">Home</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active"></li>
+    
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Animals
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item insetshadowb" href="elephant.html">Elephant</a>
+                <a class="dropdown-item insetshadowb" href="lion.html">Lion</a>
+                <a class="dropdown-item insetshadowb" href="koala.html">Koala</a>
+                <a class="dropdown-item insetshadowb" href="giraffe.html">Giraffe</a>
+                <a class="dropdown-item insetshadowb" href="parrot.html">Parrot</a>
+                <a class="dropdown-item insetshadowb" href="flamingo.html">Flamingo</a>
+              
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-info my-2 my-sm-0" type="submit">
+            Search
+          </button>
+        </form>
+      </div>
+    </nav>
+
+     <!-- sidebar -->
+     <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="#generalfacts">General Facts</a>
+        <a href="#keyfacts">Key Facts</a>
+        <a href="#pictures">Pictures</a>
+        <a href="#video">Videos</a>
+      </div>
+      <!-- add acnhor ids to the parts of the page -->
+      <div id="main">
+        <button class="openbtn" onclick="openNav()">☰ Open Sidebar</button>
+      </div>
+      <script>
+        function openNav() {
+          document.getElementById("mySidebar").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "250px";
+        }
+  
+        function closeNav() {
+          document.getElementById("mySidebar").style.width = "0";
+          document.getElementById("main").style.marginLeft = "0";
+        }
+      </script>
+  <div> 
+      <h1 style="font-size: 150px;-webkit-text-stroke: 1px black;"> Lion</h1>
+  </div>
+<!-- lion facts -->
+<h2 id="generalfacts"> General Facts</h2>
+<ol class="list">
+<li>African lions have been admired throughout history for as symbols of courage and strength. </li>
+<li>African lions once roamed most of Africa and parts of Asia and Europe, but now they can only be found today in parts of sub-Saharan Africa.</li>
+<li>Prides are family units that may comprise anywhere from two to 40 lions—including up to to three or four males, a dozen or so females, and their young</li>
+<li>Female lions are the pride's primary hunters and leaders. They often work together to prey upon antelopes, zebras, wildebeest, and other large animals of the open grasslands. </li>
+<li>Young lions do not help to hunt until they are about a year old.</li>
+<li>The name for a baby lion is a cub, whelp or lionet.</li>
+<li>Lions scent mark their territory, using their wee, to create a border.</li>
+<li>An adult male’s roar can be heard up to 8km away.</li>
+<li>Male lions are much bigger than females and they have large manes, or hair, which covers their head and neck</li>
+<li>Lions are the laziest of all the big cats, and can sleep for 16-20 hours each day.
+</li>
+
+</ol>
+
+<!-- table -->
+<div>
+    <h2 id="keyfacts"> Key Facts</h2>
+  </div>
+  <table class="table-style-lion">
+    <tr class="table-style-lion">
+      <th>Common Name   </th>
+      <td>African Lions</td>
+    </tr>
+    <tr class="table-style-lion">
+      <th>Scientific Name</th>
+      <td>Panthera leo</td>
+    </tr>
+    <tr class="table-style-lion">
+      <th>Type</th>
+      <td>Mammals</td>
+    </tr>
+    <tr class="table-style-lion">
+      <th>Diet</th>
+      <td>Carnivore</td>
+    </tr>
+    <tr class="table-style-lion">
+      <th>Group Name</th>
+      <td>Pride</td>
+    </tr>
+    <tr class="table-style-lion">
+      <th>Avergae life span</th>
+      <td>10-14 years</td>
+    </tr>
+  
+  </table>
+  <!-- pictures -->
+<div>
+    <h2 id="pictures"> Pictures</h2>
+  </div>
+  <div class="gallery">
+    <img src="./images/lion1.jpg" alt="ELephant" width="600" height="400">
+  </div>
+  
+  <div class="gallery">
+    <img src="./images/lion2.jpg" alt="ELephant" width="600" height="400">
+  </div>
+  
+  <div class="gallery">
+    <img src="./images/lion3.jpg" alt="ELephant" width="600" height="400">
+  </div>
+  
+<!-- video -->
+
+<div>
+
+    <h2 id="video" > Video</h2>
+  </div>
+  <div>
+    <iframe style="margin-left: 100px;"  width="560" height="315" src="https://www.youtube.com/embed/8CipXKFcmos" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
+    <iframe style="margin-left: 100px;"  width="560" height="315" src="https://www.youtube.com/embed/zobZd8Mp3sk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+  
+  </body>
+</html>

@@ -1,6 +1,12 @@
 img {
   padding: 15px;
 }
+h1 {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-family: "Gorditas", cursive;
+  font-size: 500px;
+}
 h2 {
   text-align: center;
   color: rgb(255, 255, 255);
@@ -48,4 +54,226 @@ h3 {
 }
 p {
   font-family: "Roboto", sans-serif;
+}
+.footer {
+  background-color: whitesmoke;
+  text-align: center;
+  font-size: small;
+  margin-top: 15px;
+}
+.jungle {
+  margin: 0px;
+}
+.titles {
+  padding-right: 200px;
+  color: #3d463f;
+  font-size: x-large;
+}
+.parag {
+  text-align: center;
+  margin: 0px;
+  padding: 5px;
+  font-weight: bold;
+  font-size: 20px;
+  background-color: #56595c70;
+  color: white;
+}
+.table-style {
+  border: 2px solid black;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: x-large;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  background-color: slategray;
+  color: whitesmoke;
+  width: 500px;
+  box-shadow: 15px 15px 10px rgba(87, 100, 112, 0.336);
+}
+.table-style-lion {
+  border: 2px solid black;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: x-large;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  background-color: #cac1a1;
+  color: whitesmoke;
+  width: 500px;
+  box-shadow: 15px 15px 10px rgba(87, 100, 112, 0.336);
+}
+.table-style-koala {
+  border: 2px solid black;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: x-large;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  background-color: #6f8d75;
+  color: whitesmoke;
+  width: 500px;
+  box-shadow: 15px 15px 10px rgba(87, 100, 112, 0.336);
+}
+.table-style-giraffe {
+  border: 2px solid black;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: x-large;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  background-color: #927c56;
+  color: whitesmoke;
+  width: 500px;
+  box-shadow: 15px 15px 10px rgba(87, 100, 112, 0.336);
+}
+.table-style-parrot {
+  border: 2px solid black;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: x-large;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  background-color: #a55454;
+  color: whitesmoke;
+  width: 500px;
+  box-shadow: 15px 15px 10px rgba(87, 100, 112, 0.336);
+}
+
+.table-style-flamingo {
+  border: 2px solid black;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: x-large;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  background-color: #ac6c84;
+  color: whitesmoke;
+  width: 500px;
+  box-shadow: 15px 15px 10px rgba(87, 100, 112, 0.336);
+}
+.list {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  text-align: justify;
+}
+
+u {
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}
+/* gallery */
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  display: inline-block;
+  width: 30%;
+  height: 300px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+@keyframes insetshadow {
+  0% {
+    box-shadow: inset 0 0 0 0 white;
+  }
+  50% {
+    box-shadow: inset 0 0 20px 0 rgba(255, 255, 255, 0.452);
+  }
+  100% {
+    box-shadow: inset 0 0 0 0 white;
+  }
+}
+.insetshadow:hover {
+  animation: insetshadow 1s infinite;
+}
+
+@keyframes insetshadowb {
+  0% {
+    box-shadow: inset 0 0 0 0 rgb(63, 61, 61);
+  }
+  50% {
+    box-shadow: inset 0 0 10px 0 rgba(133, 128, 128, 0.671);
+  }
+  100% {
+    box-shadow: inset 0 0 0 0 rgb(63, 61, 61);
+  }
+}
+.insetshadowb:hover {
+  animation: insetshadowb 1s infinite;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(97, 97, 97);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: rgb(85, 85, 85);
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  margin: 10px;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left 0.5s;
+  padding: 16px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {
+    padding-top: 15px;
+  }
+  .sidebar a {
+    font-size: 18px;
+  }
+}
+#main {
+  transition: margin-left 0.5s;
+  padding: 0px;
 }

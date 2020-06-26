@@ -8,6 +8,9 @@
       rel="stylesheet"
       href="assests/bootstrap-4.5.0-dist/css/bootstrap.min.css"
     />
+         <!-- font -->
+         <link href="https://fonts.googleapis.com/css2?family=Gorditas&family=Roboto&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
@@ -38,7 +41,7 @@
         z-index: 1;
         top: 0;
         left: 0;
-        background-color: #111;
+        background-color: rgb(97, 97, 97);
         overflow-x: hidden;
         transition: 0.5s;
         padding-top: 60px;
@@ -48,7 +51,7 @@
         padding: 8px 8px 8px 32px;
         text-decoration: none;
         font-size: 25px;
-        color: #818181;
+        color: #a5a4a4;
         display: block;
         transition: 0.3s;
       }
@@ -68,10 +71,11 @@
       .openbtn {
         font-size: 20px;
         cursor: pointer;
-        background-color: #111;
+        background-color: rgb(85, 85, 85);
         color: white;
         padding: 10px 15px;
         border: none;
+        margin:10px;
       }
 
       .openbtn:hover {
@@ -92,9 +96,13 @@
           font-size: 18px;
         }
       }
+      #main {
+  transition: margin-left .5s;
+  padding: 0px;
+}
     </style>
   </head>
-  <body>
+  <body style="background-color: #8599a5;" id="main">
       <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <!-- add home icon -->
@@ -114,9 +122,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active"></li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About</a>
-            </li>
+
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
@@ -130,13 +136,13 @@
                 Animals
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Elephant</a>
-                <a class="dropdown-item" href="#">Lion</a>
-                <a class="dropdown-item" href="#">Koala</a>
-                <a class="dropdown-item" href="#">Giraffe</a>
-                <a class="dropdown-item" href="#">Parrot</a>
-                <a class="dropdown-item" href="#">Flamingo</a>
-              
+                <a class="dropdown-item insetshadowb" href="elephant.html">Elephant</a>
+                <a class="dropdown-item insetshadowb" href="lion.html">Lion</a>
+                <a class="dropdown-item insetshadowb" href="koala.html">Koala</a>
+                <a class="dropdown-item insetshadowb" href="giraffe.html">Giraffe</a>
+                <a class="dropdown-item insetshadowb" href="parrot.html">Parrot</a>
+                <a class="dropdown-item insetshadowb" href="flamingo.html">Flamingo</a>
+                
             </li>
           </ul>
           <form class="form-inline my-2 my-lg-0">
@@ -155,10 +161,10 @@
     <!-- sidebar -->
     <div id="mySidebar" class="sidebar">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-      <a href="#">About</a>
-      <a href="#">Services</a>
-      <a href="#">Clients</a>
-      <a href="#">Contact</a>
+      <a href="#generalfacts">General Facts</a>
+      <a href="#keyfacts">Key Facts</a>
+      <a href="#pictures">Pictures</a>
+      <a href="#video">Videos</a>
     </div>
     <!-- add acnhor ids to the parts of the page -->
     <div id="main">
@@ -175,5 +181,84 @@
         document.getElementById("main").style.marginLeft = "0";
       }
     </script>
+
+
+<!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id porttitor metus. Nulla facilisi. Sed id quam hendrerit urna pellentesque bibendum. Sed erat ante, accumsan ut viverra a, condimentum eu odio. Praesent mattis malesuada egestas. Integer vel dapibus ipsum, sit amet feugiat enim. Sed varius lorem augue, a blandit nibh imperdiet ut. Sed volutpat leo sit amet ipsum consequat mattis ut eu nulla. In ante lacus, pellentesque sed neque vel, hendrerit molestie leo. Vestibulum fringilla augue eget fermentum viverra. Donec pharetra eros id urna varius maximus. Aliquam tempor, augue sed mollis ornare, augue justo facilisis neque, et ultrices leo ligula quis nibh. Nullam a dapibus justo. Fusce laoreet est ipsum.</p> -->
+<div> 
+  <h1 style="font-size: 150px;-webkit-text-stroke: 1px black;"> Elephant</h1>
+</div>
+<!-- elephant facts -->
+<h2 id="generalfacts"> General Facts</h2>
+<ol class="list">
+  <li>African elephants are the largest land animals on Earth. They are slightly larger than their Asian cousins and can be identified by their larger ears that look somewhat like the continent of Africa. </li>
+<li>Elephant ears radiate heat to help keep these large animals cool</li>
+<li>Elephants are fond of water and enjoy showering by sucking water into their trunks and spraying it all over themselves. Afterwards, they often spray their skin with a protective coating of dust.</li>
+<li>An elephant's trunk is actually a long nose used for smelling, breathing, trumpeting, drinking, and also for grabbing things—especially a potential meal. The trunk alone contains about 40,000 muscles.</li>
+<li>Both male and female African elephants have tusks, which are continuously growing teeth. They use these tusks to dig for food and water and strip bark from trees. </li>
+<li>Elephants eat roots, grasses, fruit, and bark, and they eat a lot of these things. An adult elephant can consume up to 300 pounds of food in a single day.</li>
+<li>Elephants are matriarchal, meaning they live in female-led groups. The matriarch is usually the biggest and oldest.</li>
+<li>Elephants have a longer pregnancy than any other mammal—almost 22 months.</li>
+<li>Poaching for the ivory trade is the biggest threat to African elephants’ survival.</li>
+<li>African elephants range throughout the savannas of sub-Saharan Africa and the rainforests of central and West Africa</li>
+</ol>
+
+<!-- table -->
+<div>
+  <h2 id="keyfacts"> Key Facts</h2>
+</div>
+<table class="table-style">
+  <tr class="table-style">
+    <th>Common Name   </th>
+    <td>African Elephants</td>
+  </tr>
+  <tr class="table-style">
+    <th>Scientific Name</th>
+    <td>Loxodonta africana</td>
+  </tr>
+  <tr class="table-style">
+    <th>Type</th>
+    <td>Mammals</td>
+  </tr>
+  <tr class="table-style">
+    <th>Diet</th>
+    <td>Herbivore</td>
+  </tr>
+  <tr class="table-style">
+    <th>Group Name</th>
+    <td>Herd</td>
+  </tr>
+  <tr class="table-style">
+    <th>Avergae life span</th>
+    <td>~70 years</td>
+  </tr>
+
+</table>
+
+<!-- pictures -->
+<div>
+  <h2 id="pictures"> Pictures</h2>
+</div>
+<div class="gallery">
+  <img src="./images/e.png" alt="ELephant" width="600" height="400">
+</div>
+
+<div class="gallery">
+  <img src="./images/ele.jpg" alt="ELephant" width="600" height="400">
+</div>
+
+<div class="gallery">
+  <img src="./images/iStock-elephant.jpg" alt="ELephant" width="600" height="400">
+</div>
+<!-- video -->
+
+<div>
+
+  <h2 id="video" > Video</h2>
+</div>
+<div>
+    <iframe style="margin-left: 100px;" width="560" height="315" src="https://www.youtube.com/embed/UzlKXyxgmBk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe style="margin-left: 100px;" width="560" height="315" src="https://www.youtube.com/embed/XRabJlCk_hQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+ </div>
+
   </body>
 </html>

@@ -33,8 +33,12 @@
       integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
       crossorigin="anonymous"
     ></script>
+    <style>
+
+
+    </style>
   </head>
-  <body>
+  <body style="background-color: #71853d71;">
     <!-- the idea is to create an educational website about animals and add documentries +fun facts
     home page: icons of animals=>click and you go to subpage of animal
     sidebar:different on each page (like an outline with headline of important stuff) 
@@ -65,9 +69,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active"></li>
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">About</a>
-          </li>
+    
           <li class="nav-item dropdown">
             <a
               class="nav-link dropdown-toggle"
@@ -81,12 +83,12 @@
               Animals
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="elephant.html">Elephant</a>
-              <a class="dropdown-item" href="lion.html">Lion</a>
-              <a class="dropdown-item" href="koala.html">Koala</a>
-              <a class="dropdown-item" href="giraffe.html">Giraffe</a>
-              <a class="dropdown-item" href="parrot.html">Parrot</a>
-              <a class="dropdown-item" href="flamingo.html">Flamingo</a>
+              <a class="dropdown-item insetshadowb" href="elephant.html">Elephant</a>
+              <a class="dropdown-item insetshadowb" href="lion.html">Lion</a>
+              <a class="dropdown-item insetshadowb" href="koala.html">Koala</a>
+              <a class="dropdown-item insetshadowb" href="giraffe.html">Giraffe</a>
+              <a class="dropdown-item insetshadowb" href="parrot.html">Parrot</a>
+              <a class="dropdown-item insetshadowb" href="flamingo.html">Flamingo</a>
             
           </li>
         </ul>
@@ -105,17 +107,23 @@
     </nav>
     <!-- explaination -->
     <div>
-        <h3> Welcome to the "jungle" where you will find interesting facts, pictures and videos about different animals!</h3>
+   <table >
+       <tr>
+           <td ><img class="jungle" src="images/jungle.svg"/></td>
+           <td class="titles"><h3 > Welcome to the "Jungle" where you will find interesting facts, pictures and videos about different animals!</h3> </td>
+       </tr>
+    </table>
+    <p class="parag">Click on each animal to learn more about it!</p>
     </div>
     <!-- container -->
     <div class="container">
       <div class="row">
-        <div class="col-sm-6 elephant">
+        <div class="col-sm-6 elephant insetshadow">
             <a class="text-decoration-none" href="./elephant.html">
           <img src="./images/elephant.svg" />
           <h2>Elephant</h2></a>
         </div>
-        <div class="col-sm-6 lion">
+        <div class="col-sm-6 lion insetshadow">
             <a class="text-decoration-none" href="./lion.html">
           <img src="./images/lion.svg" />
           <h2>Lion</h2>
@@ -123,35 +131,36 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-sm-6 koala">
+        <div class="col-sm-6 koala insetshadow">
             <a class="text-decoration-none" href="./koala.html">
           <img src="./images/koala.svg" />
           <h2>Koala</h2>
           </a>
         </div>
-        <div class="col-sm-6 giraffe">
+        <div class="col-sm-6 giraffe insetshadow">
             <a class="text-decoration-none" href="./giraffe.html">
           <img src="./images/giraffe.svg" />
           <h2>Giraffe</h2></a>
         </div>
       </div>
       <div class="row">
-        <div class="col-sm-6 parrot">
+        <div class="col-sm-6 parrot insetshadow">
             <a class="text-decoration-none" href="./parrot.html">
           <img src="./images/parrot.svg" />
           <h2>Parrot</h2>
           </a>
         </div>
-        <div class="col-sm-6 flamingo">
-            <a class="text-decoration-none" href="./elephant.html">
+        <div class="col-sm-6 flamingo insetshadow">
+            <a class="text-decoration-none" href="./flamingo.html">
           <img src="./images/flamingo.svg" />
           <h2>Flamingo</h2>
           </a>
         </div>
       </div>
     </div>
+<footer class="footer">
+    <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+</footer>
 
-    <!-- attribution:
-    <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
   </body>
 </html>
