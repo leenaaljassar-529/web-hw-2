@@ -1,0 +1,51 @@
+img {
+  padding: 15px;
+}
+h2 {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-family: "Gorditas", cursive;
+}
+h3 {
+  font-family: "Gorditas", cursive;
+  text-align: center;
+}
+.elephant {
+  background-color: #a6bfce;
+}
+.elephant:hover {
+  background-color: #8599a5;
+}
+.lion {
+  background-color: #e0d29a;
+}
+.lion:hover {
+  background-color: #bdb48f;
+}
+.koala {
+  background-color: #6f8d75;
+}
+.koala:hover {
+  background-color: #506153;
+}
+.giraffe {
+  background-color: #cf9b3f;
+}
+.giraffe:hover {
+  background-color: #927034;
+}
+.flamingo {
+  background-color: #f8abc8;
+}
+.flamingo:hover {
+  background-color: #ad7a8e;
+}
+.parrot {
+  background-color: #a55454;
+}
+.parrot:hover {
+  background-color: #683c3c;
+}
+p {
+  font-family: "Roboto", sans-serif;
+}
