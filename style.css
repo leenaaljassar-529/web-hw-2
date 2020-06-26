@@ -277,3 +277,6 @@ div.gallery img {
   transition: margin-left 0.5s;
   padding: 0px;
 }
+.signup {
+  background-color: #683c3c;
+}
